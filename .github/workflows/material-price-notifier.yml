@@ -1,0 +1,39 @@
+name: Material Price Notifier
+
+on:
+  schedule:
+    - cron: "30 1 * * *" # UTC 01:30 = Asia/Shanghai 09:30
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run notifier
+        env:
+          DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+          DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
+        run: |
+          mkdir -p data
+          python3 outputs/material_price_notifier.py \
+            --history-file data/material-price-history.json \
+            --state-file data/material-price-state.json
+
+      - name: Commit history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/material-price-history.json data/material-price-state.json
+          git diff --cached --quiet || git commit -m "chore: update material price history"
+          git push
