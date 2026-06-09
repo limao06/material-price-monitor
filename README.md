@@ -56,7 +56,7 @@ data/material-price-history.json
 data/material-price-state.json
 ```
 
-`material-price-history.json` 会按日期保存每日价格、涨跌额、涨跌幅，后续可用于计算趋势；钉钉通知默认只展示今日均价。
+`material-price-history.json` 会按日期保存每日价格、涨跌额、涨跌幅，钉钉通知默认展示今日均价和 7 天趋势。
 
 ## 当前口径
 
@@ -68,4 +68,4 @@ data/material-price-state.json
 - 铜：长江 1#电解铜现货均价
 - 铝：长江 铝A00 现货均价
 
-塑料涨跌按相邻可用报价对比；铜铝涨跌额来自长江有色页面，涨跌幅按前值反算。钉钉通知只展示今日均价，涨跌与趋势数据保存在历史 JSON 中。
+塑料涨跌按相邻可用报价对比；铜铝涨跌额来自长江有色页面，涨跌幅按前值反算。钉钉通知展示今日均价和 7 天趋势，完整涨跌数据保存在历史 JSON 中。

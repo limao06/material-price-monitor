@@ -340,15 +340,16 @@ def build_markdown(quotes: list[Quote], errors: list[FetchError], history: dict)
         f"> 触发时间：{now}",
         f"> {summary_for(quotes, errors)}",
         "",
-        "| 原料 | 今日均价 | 日期 | 来源 |",
-        "|---|---:|---|---|",
+        "| 原料 | 今日均价 | 7天趋势 | 日期 | 来源 |",
+        "|---|---:|---|---|---|",
     ]
     for quote in quotes:
         lines.append(
-            "| {name} | {price} {unit} | {date} | {source} |".format(
+            "| {name} | {price} {unit} | {trend} | {date} | {source} |".format(
                 name=quote.display_name,
                 price=f"{quote.price:,.2f}",
                 unit=quote.unit,
+                trend=trend_for(history, quote),
                 date=quote.date,
                 source=quote.source,
             )
@@ -360,7 +361,7 @@ def build_markdown(quotes: list[Quote], errors: list[FetchError], history: dict)
     lines.extend(
         [
             "",
-            "说明：通知只展示今日均价；涨跌额、涨跌幅和历史趋势继续保存到历史 JSON。",
+            "说明：通知展示今日均价和7天趋势；涨跌额、涨跌幅继续保存到历史 JSON。",
         ]
     )
     return "\n".join(lines)
