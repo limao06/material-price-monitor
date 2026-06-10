@@ -42,6 +42,8 @@ python3 outputs/material_price_notifier.py
 
 本仓库已包含 `.github/workflows/material-price-notifier.yml`，默认每天北京时间 09:30 自动运行，也可以在 Actions 页面手动触发。
 
+为了规避 GitHub schedule 偶发延迟或丢触发，workflow 还会在北京时间 09:45 和 10:00 兜底触发。脚本会用 `data/material-price-send-log.json` 做每日发送锁，避免同一天重复发送钉钉通知。
+
 1. 在仓库 `Settings -> Secrets and variables -> Actions -> New repository secret` 添加：
    - `DINGTALK_WEBHOOK`：钉钉机器人 webhook
    - `DINGTALK_SECRET`：钉钉加签密钥；如果机器人没开加签，可以不填
@@ -54,6 +56,7 @@ GitHub 运行后会在仓库里维护：
 ```text
 data/material-price-history.json
 data/material-price-state.json
+data/material-price-send-log.json
 ```
 
 `material-price-history.json` 会按日期保存每日价格、涨跌额、涨跌幅，钉钉通知默认展示今日均价和 7 天趋势。

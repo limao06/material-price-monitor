@@ -15,11 +15,14 @@ import urllib.request
 from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_STATE_FILE = ROOT / "work" / "material-price-state.json"
 DEFAULT_HISTORY_FILE = ROOT / "work" / "material-price-history.json"
+DEFAULT_SEND_LOG_FILE = ROOT / "work" / "material-price-send-log.json"
+LOCAL_TZ = ZoneInfo("Asia/Shanghai")
 
 
 @dataclass
@@ -157,6 +160,32 @@ def load_history(path: Path) -> dict:
         return {"records": {}}
     data.setdefault("records", {})
     return data
+
+
+def today_key() -> str:
+    return datetime.now(LOCAL_TZ).strftime("%Y-%m-%d")
+
+
+def load_send_log(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def was_sent_today(path: Path) -> bool:
+    return load_send_log(path).get("last_sent_date") == today_key()
+
+
+def mark_sent_today(path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    data = load_send_log(path)
+    data["last_sent_date"] = today_key()
+    data["last_sent_at"] = datetime.now(LOCAL_TZ).isoformat(timespec="seconds")
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def save_history(path: Path, history: dict) -> None:
@@ -334,7 +363,7 @@ def fmt_num(value: float | None, suffix: str = "") -> str:
 
 
 def build_markdown(quotes: list[Quote], errors: list[FetchError], history: dict) -> str:
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    now = datetime.now(LOCAL_TZ).strftime("%Y-%m-%d %H:%M:%S")
     lines = [
         f"### 原料市场均价日报",
         f"> 触发时间：{now}",
@@ -426,12 +455,14 @@ def main() -> int:
     parser.add_argument("--secret", default=os.getenv("DINGTALK_SECRET"), help="DingTalk robot signature secret")
     parser.add_argument("--state-file", default=str(DEFAULT_STATE_FILE), help="Local state JSON path")
     parser.add_argument("--history-file", default=str(DEFAULT_HISTORY_FILE), help="Historical quote JSON path")
+    parser.add_argument("--send-log-file", default=str(DEFAULT_SEND_LOG_FILE), help="Daily DingTalk send log JSON path")
     parser.add_argument("--dry-run", action="store_true", help="Print message only, do not send DingTalk")
     parser.add_argument("--json", action="store_true", help="Print collected quote JSON")
     args = parser.parse_args()
 
     state_file = Path(args.state_file).expanduser().resolve()
     history_file = Path(args.history_file).expanduser().resolve()
+    send_log_file = Path(args.send_log_file).expanduser().resolve()
     quotes, errors = collect_quotes(state_file)
     history = update_history(load_history(history_file), quotes)
     markdown = build_markdown(quotes, errors, history)
@@ -444,8 +475,11 @@ def main() -> int:
     if not args.dry_run:
         if not args.webhook:
             print("\n未设置 DINGTALK_WEBHOOK，已跳过发送。", file=sys.stderr)
+        elif was_sent_today(send_log_file):
+            print(f"\n今天 {today_key()} 已发送过，跳过重复钉钉通知。")
         else:
             send_dingtalk(markdown, args.webhook, args.secret)
+            mark_sent_today(send_log_file)
             print("\n已发送到钉钉。")
 
     if quotes:
