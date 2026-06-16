@@ -61,6 +61,15 @@ data/material-price-send-log.json
 
 `material-price-history.json` 会按日期保存每日价格、涨跌额、涨跌幅，钉钉通知默认展示今日均价和 7 天趋势。
 
+Actions 会额外生成并提交两张走势图：
+
+```text
+charts/material-trend-7d.png
+charts/material-trend-30d.png
+```
+
+通知会先发送价格表，再以钉钉 FeedCard 卡片形式发送 7 天和 30 天走势图。图片通过 GitHub raw URL 展示，因此钉钉机器人不需要上传本地图片文件。
+
 ## 当前口径
 
 - PP：生意社 PP(拉丝) 参考价

@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: material-price-notifier
+  cancel-in-progress: false
+
 jobs:
   notify:
     runs-on: ubuntu-latest
@@ -21,7 +25,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run notifier
+      - name: Install dependencies
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Prepare data and charts
         env:
           DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
           DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
@@ -30,12 +37,32 @@ jobs:
           python3 outputs/material_price_notifier.py \
             --history-file data/material-price-history.json \
             --state-file data/material-price-state.json \
-            --send-log-file data/material-price-send-log.json
+            --send-log-file data/material-price-send-log.json \
+            --chart-dir charts \
+            --prepare-only
 
-      - name: Commit history
+      - name: Commit data and charts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/material-price-history.json data/material-price-state.json data/material-price-send-log.json
-          git diff --cached --quiet || git commit -m "chore: update material price history"
+          git add data/material-price-history.json data/material-price-state.json charts/material-trend-7d.png charts/material-trend-30d.png
+          git diff --cached --quiet || git commit -m "chore: update material price charts"
+          git push
+
+      - name: Send DingTalk notification
+        env:
+          DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+          DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
+          CHART_URL_BASE: https://raw.githubusercontent.com/limao06/material-price-monitor/main/charts
+        run: |
+          python3 outputs/material_price_notifier.py \
+            --history-file data/material-price-history.json \
+            --state-file data/material-price-state.json \
+            --send-log-file data/material-price-send-log.json \
+            --send-from-history
+
+      - name: Commit send log
+        run: |
+          git add data/material-price-send-log.json
+          git diff --cached --quiet || git commit -m "chore: update material price send log"
           git push
