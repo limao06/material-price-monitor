@@ -423,31 +423,24 @@ def build_markdown(quotes: list[Quote], errors: list[FetchError], history: dict)
         f"### 原料市场均价日报",
         f"> 触发时间：{now}",
         f"> {summary_for(quotes, errors)}",
-        "",
-        "| 原料 | 今日均价 | 7天趋势 | 日期 | 来源 |",
-        "|---|---:|---|---|---|",
+        "| 原料 | 今日均价 | 日期 | 来源 |",
+        "|---|---:|---|---|",
     ]
     for quote in quotes:
         lines.append(
-            "| {name} | {price} {unit} | {trend} | {date} | {source} |".format(
+            "| {name} | {price} {unit} | {date} | {source} |".format(
                 name=quote.display_name,
                 price=f"{quote.price:,.2f}",
                 unit=quote.unit,
-                trend=trend_for(history, quote),
                 date=quote.date,
                 source=quote.source,
             )
         )
     if errors:
-        lines.extend(["", "**抓取异常**"])
+        lines.append("**抓取异常**")
         for error in errors:
             lines.append(f"- {error.name}：{error.error}")
-    lines.extend(
-        [
-            "",
-            "说明：通知展示今日均价和7天趋势；完整涨跌数据和走势图文件保存在 GitHub 仓库。",
-        ]
-    )
+    lines.append("说明：日报仅展示今日均价；完整涨跌数据和走势图文件保存在 GitHub 仓库。")
     return "\n".join(lines)
 
 
