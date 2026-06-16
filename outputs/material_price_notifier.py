@@ -523,21 +523,30 @@ def sign_dingtalk_url(webhook: str, secret: str | None) -> str:
 
 
 def send_dingtalk_payload(payload: dict, webhook: str, secret: str | None = None) -> None:
-    url = sign_dingtalk_url(webhook, secret)
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-        headers={"Content-Type": "application/json; charset=utf-8"},
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        body = resp.read().decode("utf-8", errors="replace")
-    try:
-        data = json.loads(body)
-    except json.JSONDecodeError:
-        data = {"raw": body}
-    if data.get("errcode") not in (None, 0):
-        raise RuntimeError(f"钉钉返回错误：{body}")
+    last_error: Exception | None = None
+    for attempt in range(1, 4):
+        try:
+            url = sign_dingtalk_url(webhook, secret)
+            req = urllib.request.Request(
+                url,
+                data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+                headers={"Content-Type": "application/json; charset=utf-8"},
+                method="POST",
+            )
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                body = resp.read().decode("utf-8", errors="replace")
+            try:
+                data = json.loads(body)
+            except json.JSONDecodeError:
+                data = {"raw": body}
+            if data.get("errcode") in (None, 0):
+                return
+            last_error = RuntimeError(f"钉钉返回错误：{body}")
+        except (urllib.error.URLError, TimeoutError) as exc:
+            last_error = exc
+        if attempt < 3:
+            time.sleep(attempt * 2)
+    raise RuntimeError(str(last_error))
 
 
 def send_dingtalk(markdown: str, webhook: str, secret: str | None = None) -> None:
@@ -555,8 +564,24 @@ def send_dingtalk_chart_cards(urls: dict[int, str], webhook: str, secret: str | 
         if not url:
             continue
         links.append({"title": f"原料价格{days}天走势图", "messageURL": url, "picURL": url})
-    if links:
+    if not links:
+        return
+    try:
         send_dingtalk_payload({"msgtype": "feedCard", "feedCard": {"links": links}}, webhook, secret)
+    except RuntimeError:
+        lines = ["### 原料价格走势图"]
+        for days in (7, 30):
+            url = urls.get(days)
+            if url:
+                lines.extend([f"#### {days}天走势", f"![原料价格{days}天走势图]({url})", ""])
+        send_dingtalk_payload(
+            {
+                "msgtype": "markdown",
+                "markdown": {"title": "原料价格走势图", "text": "\n".join(lines).strip()},
+            },
+            webhook,
+            secret,
+        )
 
 
 def collect_quotes(state_file: Path) -> tuple[list[Quote], list[FetchError]]:
