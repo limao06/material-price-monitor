@@ -7253,9 +7253,9 @@
         "unit": "元/吨",
         "source": "生意社参考价",
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
-        "change_amount": 76.67,
-        "change_percent": 0.83,
-        "saved_at": "2026-10-19T07:51:28"
+        "change_amount": null,
+        "change_percent": null,
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7264,9 +7264,9 @@
         "unit": "元/吨",
         "source": "生意社参考价",
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
-        "change_amount": 0.0,
-        "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "change_amount": null,
+        "change_percent": null,
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7275,9 +7275,9 @@
         "unit": "元/吨",
         "source": "生意社参考价",
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
-        "change_amount": 83.33,
-        "change_percent": 0.75,
-        "saved_at": "2026-10-19T07:51:28"
+        "change_amount": null,
+        "change_percent": null,
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7286,9 +7286,9 @@
         "unit": "元/吨",
         "source": "生意社参考价",
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
-        "change_amount": 0.0,
-        "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "change_amount": null,
+        "change_percent": null,
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-09-30": {
@@ -7336,7 +7336,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 38.33,
         "change_percent": 0.41,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7347,7 +7347,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": -66.66,
         "change_percent": -0.45,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7358,7 +7358,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 66.67,
         "change_percent": 0.59,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7369,7 +7369,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-01": {
@@ -7393,7 +7393,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7404,7 +7404,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7415,7 +7415,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7426,7 +7426,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-02": {
@@ -7450,7 +7450,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7461,7 +7461,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7472,7 +7472,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7483,7 +7483,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-05": {
@@ -7507,7 +7507,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7518,7 +7518,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7529,7 +7529,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7540,7 +7540,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-06": {
@@ -7564,7 +7564,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7575,7 +7575,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7586,7 +7586,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7597,7 +7597,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-07": {
@@ -7621,7 +7621,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7632,7 +7632,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7643,7 +7643,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7654,7 +7654,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-08": {
@@ -7691,7 +7691,7 @@
         "source_url": "https://pp.100ppi.com/kx/list--13-1.html",
         "change_amount": null,
         "change_percent": null,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PE": {
         "name": "PE",
@@ -7702,7 +7702,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 91.67,
         "change_percent": 0.98,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7713,7 +7713,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7724,7 +7724,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 200.0,
         "change_percent": 1.77,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7735,7 +7735,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-09": {
@@ -7772,7 +7772,7 @@
         "source_url": "https://pp.100ppi.com/kx/list--13-1.html",
         "change_amount": 180.0,
         "change_percent": 1.77,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PE": {
         "name": "PE",
@@ -7783,7 +7783,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 198.33,
         "change_percent": 2.09,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7794,7 +7794,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 200.0,
         "change_percent": 1.36,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7805,7 +7805,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 216.66,
         "change_percent": 1.88,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7816,7 +7816,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-12": {
@@ -7853,7 +7853,7 @@
         "source_url": "https://pp.100ppi.com/kx/list--13-1.html",
         "change_amount": 196.67,
         "change_percent": 1.9,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PE": {
         "name": "PE",
@@ -7864,7 +7864,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 236.67,
         "change_percent": 2.44,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7875,7 +7875,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 83.33,
         "change_percent": 0.56,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7886,7 +7886,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 183.34,
         "change_percent": 1.56,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7897,7 +7897,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-13": {
@@ -7934,7 +7934,7 @@
         "source_url": "https://pp.100ppi.com/kx/list--13-1.html",
         "change_amount": 16.66,
         "change_percent": 0.16,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PE": {
         "name": "PE",
@@ -7945,7 +7945,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 33.33,
         "change_percent": 0.34,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -7956,7 +7956,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -7967,7 +7967,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 100.0,
         "change_percent": 0.84,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -7978,7 +7978,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-14": {
@@ -8015,7 +8015,7 @@
         "source_url": "https://pp.100ppi.com/kx/list--13-1.html",
         "change_amount": 73.34,
         "change_percent": 0.69,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PE": {
         "name": "PE",
@@ -8026,7 +8026,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": 38.33,
         "change_percent": 0.39,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -8037,7 +8037,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 66.67,
         "change_percent": 0.44,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -8048,7 +8048,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 50.0,
         "change_percent": 0.42,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -8059,7 +8059,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-15": {
@@ -8096,7 +8096,7 @@
         "source_url": "https://pp.100ppi.com/kx/list--13-1.html",
         "change_amount": 93.33,
         "change_percent": 0.88,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PE": {
         "name": "PE",
@@ -8107,7 +8107,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": -80.0,
         "change_percent": -0.8,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -8118,7 +8118,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -8129,7 +8129,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": 6.66,
         "change_percent": 0.06,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -8140,7 +8140,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-16": {
@@ -8177,8 +8177,7 @@
         "source_url": "https://pp.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "previous_price": 10750.0,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PE": {
         "name": "PE",
@@ -8189,8 +8188,7 @@
         "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
         "change_amount": -83.33,
         "change_percent": -0.84,
-        "previous_price": 9908.33,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PC": {
         "name": "PC",
@@ -8201,8 +8199,7 @@
         "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
         "change_amount": -16.67,
         "change_percent": -0.11,
-        "previous_price": 15066.67,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "ABS": {
         "name": "ABS",
@@ -8213,8 +8210,7 @@
         "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
         "change_amount": -66.66,
         "change_percent": -0.55,
-        "previous_price": 12073.33,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       },
       "PMMA": {
         "name": "PMMA",
@@ -8225,8 +8221,7 @@
         "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
         "change_amount": 0.0,
         "change_percent": 0.0,
-        "previous_price": 14266.67,
-        "saved_at": "2026-10-19T07:51:28"
+        "saved_at": "2026-10-20T06:30:01"
       }
     },
     "2026-10-19": {
@@ -8253,8 +8248,94 @@
         "change_percent": 0.81,
         "previous_price": 23460.0,
         "saved_at": "2026-10-19T07:51:28"
+      },
+      "PP": {
+        "name": "PP",
+        "display_name": "PP(拉丝)",
+        "price": 10756.67,
+        "unit": "元/吨",
+        "source": "生意社参考价",
+        "source_url": "https://pp.100ppi.com/kx/list--13-1.html",
+        "change_amount": 6.67,
+        "change_percent": 0.06,
+        "previous_price": 10750.0,
+        "saved_at": "2026-10-20T06:30:01"
+      },
+      "PE": {
+        "name": "PE",
+        "display_name": "PE(LLDPE)",
+        "price": 9883.33,
+        "unit": "元/吨",
+        "source": "生意社参考价",
+        "source_url": "https://lldpe.100ppi.com/kx/list--13-1.html",
+        "change_amount": 58.33,
+        "change_percent": 0.59,
+        "previous_price": 9825.0,
+        "saved_at": "2026-10-20T06:30:01"
+      },
+      "PC": {
+        "name": "PC",
+        "display_name": "PC",
+        "price": 14900.0,
+        "unit": "元/吨",
+        "source": "生意社参考价",
+        "source_url": "https://pc.100ppi.com/kx/list--13-1.html",
+        "change_amount": -150.0,
+        "change_percent": -1.0,
+        "previous_price": 15050.0,
+        "saved_at": "2026-10-20T06:30:01"
+      },
+      "ABS": {
+        "name": "ABS",
+        "display_name": "ABS",
+        "price": 12133.33,
+        "unit": "元/吨",
+        "source": "生意社参考价",
+        "source_url": "https://abs.100ppi.com/kx/list--13-1.html",
+        "change_amount": 126.66,
+        "change_percent": 1.05,
+        "previous_price": 12006.67,
+        "saved_at": "2026-10-20T06:30:01"
+      },
+      "PMMA": {
+        "name": "PMMA",
+        "display_name": "亚克力(PMMA)",
+        "price": 14266.67,
+        "unit": "元/吨",
+        "source": "生意社参考价",
+        "source_url": "https://pmma.100ppi.com/kx/list--13-1.html",
+        "change_amount": 0.0,
+        "change_percent": 0.0,
+        "previous_price": 14266.67,
+        "saved_at": "2026-10-20T06:30:01"
+      }
+    },
+    "2026-10-20": {
+      "铜": {
+        "name": "铜",
+        "display_name": "长江 1#电解铜",
+        "price": 109950.0,
+        "unit": "元/吨",
+        "source": "长江有色现货均价",
+        "source_url": "https://www.cjys.net/price",
+        "change_amount": -840.0,
+        "change_percent": -0.76,
+        "previous_price": 110790.0,
+        "saved_at": "2026-10-20T06:30:01"
+      },
+      "铝": {
+        "name": "铝",
+        "display_name": "长江 铝A00",
+        "price": 23530.0,
+        "unit": "元/吨",
+        "source": "长江有色现货均价",
+        "source_url": "https://www.cjys.net/price",
+        "change_amount": -120.0,
+        "change_percent": -0.51,
+        "previous_price": 23650.0,
+        "saved_at": "2026-10-20T06:30:01"
       }
     }
   },
-  "updated_at": "2026-10-19T07:51:28"
+  "updated_at": "2026-10-20T06:30:01"
 }
