@@ -8964,7 +8964,7 @@
         "change_amount": -580.0,
         "change_percent": -0.52,
         "previous_price": 111050.0,
-        "saved_at": "2026-10-31T07:27:51"
+        "saved_at": "2026-10-31T08:30:40"
       },
       "铝": {
         "name": "铝",
@@ -8976,7 +8976,7 @@
         "change_amount": 40.0,
         "change_percent": 0.17,
         "previous_price": 23740.0,
-        "saved_at": "2026-10-31T07:27:51"
+        "saved_at": "2026-10-31T08:30:40"
       },
       "PP": {
         "name": "PP",
@@ -9040,5 +9040,5 @@
       }
     }
   },
-  "updated_at": "2026-10-31T07:27:51"
+  "updated_at": "2026-10-31T08:30:40"
 }
