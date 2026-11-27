@@ -10577,7 +10577,33 @@
         "previous_price": 22320.0,
         "saved_at": "2026-11-26T10:58:30"
       }
+    },
+    "2026-11-27": {
+      "铜": {
+        "name": "铜",
+        "display_name": "长江 1#电解铜",
+        "price": 97200.0,
+        "unit": "元/吨",
+        "source": "长江有色现货均价",
+        "source_url": "https://www.cjys.net/price",
+        "change_amount": 2130.0,
+        "change_percent": 2.24,
+        "previous_price": 95070.0,
+        "saved_at": "2026-11-27T10:03:51"
+      },
+      "铝": {
+        "name": "铝",
+        "display_name": "长江 铝A00",
+        "price": 22960.0,
+        "unit": "元/吨",
+        "source": "长江有色现货均价",
+        "source_url": "https://www.cjys.net/price",
+        "change_amount": 260.0,
+        "change_percent": 1.15,
+        "previous_price": 22700.0,
+        "saved_at": "2026-11-27T10:03:51"
+      }
     }
   },
-  "updated_at": "2026-11-26T10:58:30"
+  "updated_at": "2026-11-27T10:03:51"
 }
